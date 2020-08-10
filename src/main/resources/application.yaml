@@ -1,0 +1,14 @@
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/ecommercedb
+    username: postgres
+    password: password
+    pool-size: 30
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        order_inserts: true
+        jdbc:
+          batch_size: 100
